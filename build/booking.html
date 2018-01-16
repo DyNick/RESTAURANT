@@ -1,0 +1,131 @@
+
+<!--include template/main-page/intro--><!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Restaurant</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/main.css" rel="stylesheet">
+    <!-- FAVICON-->
+    <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+    <!--FAVICON:END-->
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__list__item"><a class="navigation__list__item__link" href="#menu">menu</a></li>
+            <li class="navigation__list__item"><a class="navigation__list__item__link" href="#about">about us</a></li>
+            <li class="navigation__list__item"><a class="navigation__list__item__link" href="gallery.html">gallery</a></li>
+            <li class="navigation__list__item"><a class="navigation__list__item__link" href="booking.html">reserve</a></li>
+            <li class="navigation__list__item"><a class="navigation__list__item__link" href="#chief">chief</a></li>
+            <li class="navigation__list__item"><a class="navigation__list__item__link" href="#contact">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="section-five">
+      <div class="container container--five">
+        <div class="container-inner">
+          <div class="column column--two-items">
+            <div class="form-booking">
+              <div class="card card--booking">
+                <h2 class="column-header__title column-header__title--dark" id="contact-title" data-text="PE#5ON%L INF$">PERSONAL INFO</h2>
+                <p class="column-text column-text--light">Don't wait for what will happen. Freedom of space is freedom of mind. We will find an original solution tailored to your personality and style. Let us know, we’ll be happy to contact you.
+                  <div class="close"></div>
+                </p>
+                <form class="form form-animate-fields" action="#">
+                  <div class="form-field">
+                    <input class="form-input" id="name" type="text" name="name"/>
+                    <label class="form-label" for="firstname"><span class="form-label-content">First name</span></label>
+                  </div>
+                  <div class="form-field">
+                    <input class="form-input" id="lastname" type="text" name="lastname"/>
+                    <label class="form-label" for="lastname"><span class="form-label-content">Last Name</span></label>
+                  </div>
+                  <div class="form-field">
+                    <input class="form-input" id="email" type="email" name="email"/>
+                    <label class="form-label" for="email"><span class="form-label-content">E-mail</span></label>
+                  </div>
+                  <div class="form-field">
+                    <textarea class="form-input" id="text" rows="10" cols="45" name="text"></textarea>
+                    <label class="form-label" for="text"><span class="form-label-content">Massage</span></label>
+                  </div>
+                  <h2 class="column-header__title column-header__title--dark" id="contact-title" data-text="B5$KIN# INF$">BOOKING INFO</h2>
+                  <div class="form-field">
+                    <div id="calendar">
+                      <input class="form-input" id="Date" type="text" name="date"/>
+                      <label class="form-label" for="date"></label>
+                    </div>
+                    <p>enter date</p>
+                  </div>
+                  <div class="radio-buttons">
+                    <ul class="radio-buttons-list">
+                      <li class="radio-buttons-list__item">
+                        <input class="input" id="one" type="radio" name="selection"/>
+                        <label class="label" for="one">2</label>
+                        <div class="check"></div>
+                      </li>
+                      <li class="radio-buttons-list__item">
+                        <input class="input" id="two" type="radio" name="selection"/>
+                        <label class="label" for="two">2-4</label>
+                        <div class="check">
+                          <div class="inside"></div>
+                        </div>
+                      </li>
+                      <li class="radio-buttons-list__item">
+                        <input class="input" id="three" type="radio" name="selection"/>
+                        <label class="label" for="three">5</label>
+                        <div class="check">
+                          <div class="inside"></div>
+                        </div>
+                      </li>
+                      <li class="radio-buttons-list__item">
+                        <input class="input" id="four" type="radio" name="selection"/>
+                        <label class="label" for="four">5-10</label>
+                        <div class="check">
+                          <div class="inside"></div>
+                        </div>
+                      </li>
+                      <li class="radio-buttons-list__item">
+                        <input class="input" id="five" type="radio" name="selection"/>
+                        <label class="label" for="five">10+</label>
+                        <div class="check">
+                          <div class="inside"></div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="section-first__description__button button button--menu"><span class="caption">SEND MESSAGE</span></button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="column column--two-items">
+            <div class="plan-form"><img class="booking-image" src="img/reserv/plan.png"/></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="section-footer">
+      <div class="container container--footer">
+        <div class="copyright">
+          <p>&copy 2013 - Organisation</p>
+        </div>
+        <div class="social"><a class="support" href="#">Contact Us</a><a class="face" href="#">f</a><a class="tweet" href="#">t</a><a class="linked" href="#">in</a></div>
+        <div class="btn text-btn">
+          <div class="btn-cap">Click Me</div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

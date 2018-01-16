@@ -1,0 +1,26 @@
+.header{
+	position: fixed;
+	z-index: 10;
+	top:0;
+	right:0;
+	left:0;
+	background-color: #fff;
+	height: 80px;
+	transition: all 1s;
+
+}
+.small{
+	height: 50px;
+}
+
+.navigation{
+
+	&__list{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		&__item{
+
+		}
+	}
+}

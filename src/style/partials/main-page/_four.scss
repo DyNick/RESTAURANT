@@ -1,0 +1,32 @@
+.column {
+	&--four-25 {
+		padding: 0;
+		width: 15%;
+		.chief-img{
+			width: 100%;
+		}
+	}
+	&--four-35 {
+		padding: 0;
+		width: 35%;
+		left:-11%;
+	}
+	&--four-60 {
+		padding: 0;
+		width: 50%;
+		.chief-description{
+			width: 100%;
+			height:410px;
+			//background-image: url('https://cs2.livemaster.ru/storage/16/25/c4b0ce3d64348c2f4159a68970dq--still-life-wood-panel-loft-wall-panel-loft-bilateral-potion.jpg') ;
+			background-image: url('http://vngprg.com/assets/img/dark.jpg') ;
+			margin-top: 40px;
+			right: 25px;
+			position: relative;
+			z-index: 1;
+			padding: 20px 60px;
+		}
+	}
+}
+.kitchen-img {
+	margin-top: 134px;
+}

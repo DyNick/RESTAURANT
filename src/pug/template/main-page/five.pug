@@ -1,0 +1,74 @@
+mixin input(type, label)
+	.input-container
+		input(type='#{type}' id='#{label}' required)
+		label(for='#{label}')=label
+		.bar
+
+mixin five()
+	section.section-five
+		div.container.container--five
+			div.container-inner
+				.column.column--two-items
+					.form-booking
+						.card.card--booking
+							h2#contact-title.column-header__title.column-header__title--dark(data-text='PE#5ON%L INF$') PERSONAL INFO
+							p.column-text.column-text--light Don't wait for what will happen. Freedom of space is freedom of mind. We will find an original solution tailored to your personality and style. Let us know, we’ll be happy to contact you.
+								.close
+							form.form.form-animate-fields(action='#')
+								.form-field
+									input#name.form-input(type='text', name='name')
+									label.form-label(for='firstname')
+										span.form-label-content First name
+								.form-field
+									input#lastname.form-input(type='text', name='lastname')
+									label.form-label(for='lastname')
+										span.form-label-content Last Name
+								.form-field
+									input#email.form-input(type='email', name='email')
+									label.form-label(for='email')
+										span.form-label-content E-mail
+								.form-field
+									textarea#text.form-input(rows='10', cols='45', name='text')
+									label.form-label(for='text')
+										span.form-label-content Massage
+								h2#contact-title.column-header__title.column-header__title--dark(data-text='B5$KIN# INF$') BOOKING INFO
+								.form-field
+									#calendar
+										input#Date.form-input(type='text', name='date')
+										label.form-label(for='date')
+									p enter date
+
+								.radio-buttons
+									ul.radio-buttons-list
+										li.radio-buttons-list__item
+											input#one.input(type='radio', name='selection')
+											label.label(for='one') 2
+											.check
+										li.radio-buttons-list__item
+											input#two.input(type='radio', name='selection')
+											label.label(for='two') 2-4
+											.check
+												.inside
+										li.radio-buttons-list__item
+											input#three.input(type='radio', name='selection')
+											label.label(for='three') 5
+											.check
+												.inside
+										li.radio-buttons-list__item
+											input#four.input(type='radio', name='selection')
+											label.label(for='four') 5-10
+											.check
+												.inside
+										li.radio-buttons-list__item
+											input#five.input(type='radio', name='selection')
+											label.label(for='five') 10+
+											.check
+												.inside
+
+								button.section-first__description__button.button.button--menu
+									span.caption SEND MESSAGE
+
+				.column.column--two-items
+					div.plan-form
+						img.booking-image(src='img/reserv/plan.png')
+

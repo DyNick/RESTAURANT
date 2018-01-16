@@ -1,0 +1,125 @@
+.section-five{
+	margin-top: 30px;
+	margin-bottom: 300px;
+	background-color: #000;
+}
+.card--booking {
+	width: 70%;
+	margin: 35px auto;
+	border: 3px solid #fff;
+	padding: 20px;
+}
+.booking-image{
+	width: 100%;
+}
+table.ui-datepicker-calendar {
+	width: 100%;
+	box-sizing: border-box;
+}
+.ui-widget-header{
+	width: 300px;
+	color:#1abc9c;
+	font-weight: normal;
+	border: none;
+	background: #fff;
+	box-sizing: border-box;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+	background: #1abc9c;
+	color: #fff;
+	display: inline-block;
+	width: 100%;
+	border: 1px solid #fff;
+	text-align: center;
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br{
+	border-radius:0 !important;
+}
+/*=================RADIO============*/
+.radio-buttons-list {
+	list-style: none;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.radio-buttons-list__item {
+	color: #fff;
+	display: block;
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 40px;
+	text-transform: uppercase;
+}
+
+.input {
+	position: absolute;
+	visibility: hidden;
+}
+
+.label {
+	display: block;
+	position: relative;
+	font-weight: 300;
+	font-size: 16px;
+	left: 20px;
+	padding-left: 25px;
+	top: 32px;
+	z-index: 9;
+	cursor: pointer;
+	-webkit-transition: all 0.5s linear;
+}
+
+.radio-buttons-list__item:hover .label {
+	color: #fff;
+}
+
+.check {
+	display: block;
+	position: absolute;
+	border: 2px solid #AAAAAA;
+	border-radius: 100%;
+	height: 15px;
+	width: 15px;
+	top: 30px;
+	left: 20px;
+	z-index: 5;
+	transition: border .5s linear;
+	-webkit-transition: border .5s linear;
+}
+
+.radio-buttons-list__item:hover .check {
+	border: 2px solid #788473;
+}
+
+.check::before {
+	display: block;
+	position: absolute;
+	content: '';
+	border-radius: 100%;
+	height: 11px;
+	width: 11px;
+	top: 2px;
+	left: 2px;
+	margin: auto;
+	transition: background 0.5s linear;
+	-webkit-transition: background 0.5s linear;
+}
+
+.input:checked ~ .check {
+	border: 2px solid #fff;
+}
+
+.input:checked ~ .check::before{
+	background: #fff;
+}
+
+.input:checked ~ label{
+	color: #fff;
+}
+.plan-form{
+	background-color: #fff;
+}

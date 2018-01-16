@@ -1,0 +1,179 @@
+
+.google-map{
+	filter: grayscale(100%) contrast(73%);
+}
+.card{
+	width: 70%;
+
+}
+.container--contact{
+	position:relative;
+}
+.form-block{
+	width: 100%;
+	height:560px;
+	//background-image: url('https://cs2.livemaster.ru/storage/16/25/c4b0ce3d64348c2f4159a68970dq--still-life-wood-panel-loft-wall-panel-loft-bilateral-potion.jpg') ;
+	background-image: url('http://vngprg.com/assets/img/dark.jpg') ;
+	margin-top: 40px;
+	right: 25px;
+	position: relative;
+	z-index: 1;
+	padding: 20px 60px;
+}
+.section-contact{
+	margin-bottom: 100px;
+	.container-inner{
+		margin: 0;
+	}
+	.column--two-items {
+		padding:0;
+	}
+	.about-description {
+		width: 100%;
+		height: 604px;
+		background-image: url(http://vngprg.com/assets/img/light.jpg);
+		margin-top: 185px;
+		left: -63px;
+		position: relative;
+		z-index: 1;
+		padding: 20px 60px;
+	}
+}
+
+
+/*==============*/
+$color_1: #ffffff;
+$color_2: white;
+$background_color_1: transparent;
+$background_color_2: #fff;
+
+.form-container {
+	text-align: left;
+}
+#text{
+	height: 60px;
+}
+#text.is-filled+.form-label:after {
+	opacity: 1;
+	top: 53px;
+}
+
+
+.form-animate-fields {
+	.form-field {
+		color: #fff;
+		position: relative;
+		overflow: hidden;
+		padding-top: 24px;
+		//margin-bottom: 24px;
+		margin-bottom: -16px;
+	}
+	.form-input {
+		position: relative;
+		z-index: 2;
+		display: block;
+		background-color: $background_color_1;
+		width: 100%;
+		height: 44px;
+		padding: 8px;
+		border: 0;
+		-webkit-appearance: none;
+		appearance: none;
+		color: $color_1;
+		&:focus {
+			outline: none;
+		}
+	}
+	.form-label {
+		width: 100%;
+		position: absolute;
+		top: 45px;
+		padding: 10px 8px;
+		&:before {
+			position: absolute;
+			content: "";
+			width: 100%;
+			left: 0;
+			opacity: 0.5;
+			top: 0;
+			height: 100%;
+			transform: translate3d(-101%, 0, 0);
+			transition: transform 0.35s cubic-bezier(0.7, 0, 0.3, 1);
+		}
+		&:after {
+			position: absolute;
+			content: "";
+			width: 100%;
+			left: 0;
+			opacity: 0.5;
+			bottom: 0;
+			height: 1px;
+			background-color: $background_color_2;
+		}
+	}
+	.form-input.is-filled {
+		&+.form-label {
+			&:before {
+				transform: translate3d(0, 0, 0);
+			}
+			&:after {
+				opacity: 1;
+				top: 20px;
+			}
+			.form-label-content {
+				color: $color_2;
+				transform: translate3d(0px, -34px, 0);
+				font-size: 13px;
+				opacity:1;
+			}
+		}
+	}
+	.form-label-content {
+		font-size: 14px;
+		position: relative;
+		display: block;
+		width: 100%;
+		transform-origin: 0 0;
+		//margin-left: -8px;
+		opacity:0.5;
+		transition: transform 0.25s 0.05s cubic-bezier(0.7, 0, 0.3, 1), color 0.25s 0.25s cubic-bezier(0.7, 0, 0.3, 1);
+		transition: all 0.5s ease;
+	}
+}
+.contact-panel-button {
+	color: $color_2;
+	padding: 5px 15px;
+	border-radius: 3px;
+	float: right;
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.button.button--send{
+		border: 2px solid #fff;
+		color: #000;
+		background: #fff;
+	span:after, span:before {
+		padding: 10px;
+		width: 77px;
+		content: 'send';
+		position: absolute;
+		top: -2px;
+		left: -2px;
+		opacity: .7;
+	}
+	&:hover{
+		span:after, span:before {
+			z-index: 1;
+		}
+	}
+}
+
+.figure-contact {
+	position: absolute;
+	width: 57%;
+	height: 700px;
+	right: 0;
+	z-index: -1;
+}
